@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150211030545) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "blocks", force: true do |t|
     t.string   "page"
     t.string   "usecase"
