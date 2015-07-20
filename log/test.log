@@ -1,0 +1,198 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 35], ["created_at", "2015-02-04 22:52:35.357332"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 22:52:35.357332"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 35], ["created_at", "2015-02-04 23:50:02.908266"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 23:50:02.908266"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:50:02.920417"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:02.920417"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:50:02.925579"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:02.925579"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"4", "age"=>"50"}, "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Unpermitted parameters: id
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:50:02.931309"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:02.931309"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = 5[0m  [["age", 60], ["updated_at", "2015-02-04 23:50:02.932840"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"5", "age"=>"60"}, "id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Unpermitted parameters: id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 35], ["created_at", "2015-02-04 23:50:57.519425"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:57.519425"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:50:57.529454"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:57.529454"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:50:57.535009"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:57.535009"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"8", "age"=>"50"}, "id"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Unpermitted parameters: id
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:50:57.541073"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:50:57.541073"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = 9[0m  [["age", 60], ["updated_at", "2015-02-04 23:50:57.542679"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"9", "age"=>"60"}, "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+Unpermitted parameters: id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 35], ["created_at", "2015-02-04 23:51:40.620473"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:51:40.620473"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:51:40.631490"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:51:40.631490"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:51:40.637610"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:51:40.637610"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"12", "age"=>"50"}, "id"=>"12"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 12]]
+Unpermitted parameters: id
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:51:40.643298"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:51:40.643298"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = 13[0m  [["age", 60], ["updated_at", "2015-02-04 23:51:40.644869"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"13", "age"=>"60"}, "id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+Unpermitted parameters: id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 35], ["created_at", "2015-02-04 23:52:10.302313"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 23:52:10.302313"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:52:10.314241"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:52:10.314241"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:52:10.320070"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:52:10.320070"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"16", "age"=>"50"}, "id"=>"16"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 16]]
+Unpermitted parameters: id
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:52:10.325935"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "Calhoun Tubbs"], ["updated_at", "2015-02-04 23:52:10.325935"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = 17[0m  [["age", 60], ["updated_at", "2015-02-04 23:52:10.327496"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"17", "age"=>"60"}, "id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 17]]
+Unpermitted parameters: id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 35], ["created_at", "2015-02-04 23:52:39.672066"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 23:52:39.672066"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:52:39.683134"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 23:52:39.683134"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:52:39.690322"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 23:52:39.690322"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"20", "age"=>"50"}, "id"=>"20"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 20]]
+Unpermitted parameters: id
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["age", 50], ["created_at", "2015-02-04 23:52:39.697175"], ["email", "jamesbonline@gmail.com"], ["gender", "male"], ["name", "James Billings"], ["updated_at", "2015-02-04 23:52:39.697175"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = 21[0m  [["age", 60], ["updated_at", "2015-02-04 23:52:39.698858"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by Api::UsersController#update as HTML
+  Parameters: {"user"=>{"id"=>"21", "age"=>"60"}, "id"=>"21"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 21]]
+Unpermitted parameters: id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 21]]

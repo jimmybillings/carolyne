@@ -1,0 +1,15 @@
+{
+  "vendor": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+      "angular": "*", 
+      "restangular": "*",
+      "angular-bootstrap": "*",
+      "angular-mocks": "*", 
+      "angular-ui-router": "*",
+      "angular-resource": "*",
+      "bootstrap-sass": "*",
+      "angular-sanitize": "*"   
+    }
+  }
+}

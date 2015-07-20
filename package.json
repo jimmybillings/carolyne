@@ -1,0 +1,21 @@
+{
+  "name": "carolyne_yoga",
+  "version": "1.0.0",
+  "description": "yoga website",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-jshint": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*", 
+    "gulp-sourcemaps" : "*",
+    "gulp-livereload": "*",
+    "gulp-filter": "*",
+    "gulp-concat": "*",
+    "node-sass": "*" ,
+    "gulp-rename": "*"
+
+  },
+  "devDependencies": {}
+}
