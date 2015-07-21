@@ -1,0 +1,494 @@
+// @include font-face(AkzidenzGroteskProRegular, 'modules/core/css/akzidenz-grotesk/akzidgrtskproreg', normal);
+// @include font-face(AkzidenzGroteskProMedium, 'modules/core/css/akzidenz-grotesk/akzidgrtskpromed', normal);
+// @include font-face(AkzidenzGroteskProBold, 'modules/core/css/akzidenz-grotesk/akzidgrtskprobol-webfont');
+// @include font-face(ubuntu, 'modules/core/css/ubuntu/Ubuntu-L', normal);
+
+.navbar-inverse {
+	margin-bottom: -52px;
+	z-index: 100;
+	border-bottom: none;
+	.navbar-brand {
+		font-family: "ubuntu";
+		font-size: 16px;
+		letter-spacing: 3px;	
+		font-weight: 200;
+		font-style: normal;
+		@media (min-width: 768px) {
+	  		font-size: 18px;
+			letter-spacing: 2px;
+		}
+
+		@media (min-width: 992px) {
+	  		font-size: 20px;
+			letter-spacing: 3px;
+		}
+
+		@media (min-width: 1200px) {
+	  		font-size: 24px;
+			letter-spacing: 5px;	
+		}
+	}
+}
+
+.app-view {
+	margin-bottom: 50px;
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+.private-corporate-banner {
+	background-image: url('/modules/core/img/brand/private.jpg');
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 370px;
+}
+
+.doterra-banner {
+	background-image: url('/modules/core/img/brand/doterra-banner.jpg');
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 370px;
+	margin-bottom: 50px;
+  .container {
+    margin-top: 340px;
+    h2 {
+      float: left;
+      background: #ff63b0;
+      color: white;
+      padding: 4px 12px;
+      opacity: 0.7;
+    }
+  }
+}
+
+.classes-banner {
+	background-image: url('/modules/core/img/brand/classes.jpg');
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 370px;
+	margin-bottom: 50px;
+	.container {
+		margin-top: 340px;
+		h2 {
+			float: left;
+			background: #ff63b0;
+			color: white;
+			padding: 4px 12px;
+			opacity: 0.7;
+		}
+	}
+	
+}
+.about-banner {
+	background-image: url('/modules/core/img/brand/laughing.jpg');
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto 40px auto;
+	background-repeat: repeat;
+	min-height: 370px;
+	margin-bottom: 50px;
+	.container {
+		margin-top: 340px;
+		h2 {
+			float: left;
+			background: #ff63b0;
+			color: white;
+			padding: 4px 12px;
+			opacity: 0.7;
+		}
+	}
+}
+
+.corporate-banner {
+	background-image: url('/modules/core/img/brand/corporate.jpg');
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 370px;
+	margin-bottom: 50px;
+	.container {
+		margin-top: 340px;
+		h2 {
+			float: left;
+			background: #ff63b0;
+			color: white;
+			padding: 4px 12px;
+			opacity: 0.7;
+		}
+	}
+}
+
+.privates-banner {
+	background-image: url('/modules/core/img/brand/privates.jpg');
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 370px;
+	margin-bottom: 50px;
+	.container {
+		margin-top: 340px;
+		h2 {
+			float: left;
+			background: #ff63b0;
+			color: white;
+			padding: 4px 12px;
+			opacity: 0.7;
+		}
+	}
+}
+
+.offerings-banner {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 auto 40px auto;
+	background-repeat: repeat;
+	margin-bottom: 50px;
+	.container {
+		margin-top: 50px;
+		h2 {
+			float: left;
+			background: #ff63b0;
+			color: white;
+			padding: 4px 12px;
+			opacity: 0.7;
+		}
+	}
+}
+
+
+.home-page {
+	h3.home {
+		line-height: 1.5;
+		font-size: 18px;
+		color: #eee;
+		font-weight: 200;
+		@media (min-width: 768px) {
+	  		font-size: 18px;
+		}
+
+		@media (min-width: 992px) {
+	  		font-size: 20px;
+		}
+	}
+	h1.home {
+		color:darken(#FF96CA, 10%);
+		line-height: 1.4;
+		font-size: 26px;
+		margin-top: -10px;
+		@media (min-width: 768px) {
+	  		font-size: 26px;
+	  		margin-top: -10px;
+		}
+
+		@media (min-width: 992px) {
+	  		font-size: 28px;
+	  		margin-top: -10px;
+		}
+
+		@media (min-width: 1200px) {
+	  		font-size: 36px;
+	  		margin-top: 0px;	
+		}
+	}
+	.link-blocks {
+		margin-top: 60px;
+	}
+	.home-banner {
+		background-image: url('/modules/core/img/brand/holycross.jpg');
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		min-height: 370px;
+		@media (min-width: 768px) {
+	  		min-height: 470px;
+		}
+
+		@media (min-width: 992px) {
+	  		min-height: 470px;
+		}
+
+		@media (min-width: 1200px) {
+	  		min-height: 560px;	
+		}
+		& > .content {
+			margin-top: 80px;
+		}
+	}
+}
+
+.link-blocks {
+	& > div {
+		.panel {
+			border-color: transparent;
+			.panel-footer {
+				position: relative;
+				margin-top: -31px;
+				@media (min-width: 768px) {
+					margin-top: -37px;
+				}
+				background-color:rgba(0,0,0,0.5);
+				border-top: none;
+				.panel-title {
+					color: #fff;
+					font-weight: 200;
+					font-size: 10px;
+					text-align: center;
+					@media (min-width: 768px) {
+			  			font-size:16px;
+			  			text-align: left;
+					}
+				}
+			}
+			.panel-body {
+				padding: 0;
+				a{
+					img {
+						width: 100%;
+						height: auto;
+					}
+				&:hover{
+					img {
+						opacity:0.8;
+					}
+				}
+				}
+				
+			}
+		}
+	}
+}
+
+.offerings-page {
+
+}
+
+.practice {
+
+	.classes {
+		.panel {
+			padding: 10px;
+			background-color: #eee;
+		}
+		.maps {
+			.panel {
+				height: 200px;
+			}
+		}
+	}
+	.practice-links {
+		li {
+			cursor: pointer;
+		}
+	}
+}
+
+
+.contact-page {
+	margin-top: 50px;
+	input[type=text], input[type=email], input[type=number], textarea {
+		border: 1px solid #ccc;
+		background: #fafafa;
+	}
+	button[type=submit] {
+		background: #ff63b0;
+		color: #fff;
+		border: transparent;
+		float: right;
+		padding: 10px 30px;
+	}
+	img {
+		width:100%;
+		height: 100%;
+	}
+  .container {
+    > h2 {
+      float: left;
+      background: #ff63b0;
+      color: white;
+      padding: 4px 12px;
+      opacity: 0.7;
+    }
+    > .row {
+      clear: left;
+    }
+    
+  }
+}
+@include sticky-footer(1050px, ".wrapper", ".push", ".footer");
+@media (min-width: 768px) {
+@include sticky-footer(600px, ".wrapper", ".push", ".footer");
+}
+.footer {
+	.top-footer {
+		height: 550px;
+		@media (min-width: 768px) {
+			height:350px;
+		}
+		background-color: #1f1f1f;
+		h3 {
+			color: #ff63b0;
+		}
+		h5 {
+			color: wheat;
+		}
+		.instagram {
+			> div {
+				height: 60px;
+				@media (min-width: 768px) {
+			  		height:50px;
+				}
+
+				@media (min-width: 992px) {
+			  		height: 70px;
+				}
+
+				@media (min-width: 1200px) {
+			  		height: 100px;	
+				}
+				margin: 10px 0 10px 0;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		form {
+			margin-top: 30px;
+			label {
+				color: darken(#FF96CA, 10%);
+				text-transform: uppercase;
+			}
+			button {
+				margin-top: 5px;
+			}
+		}
+		.fa {
+			color: #fff;
+			float: left;
+			padding: 5px 20px 0 0px;
+		}
+	}
+	.bottom-footer {
+		height: 500px;
+		@media (min-width: 768px) {
+			height:250px;
+		}
+		padding-top: 30px;
+		background-color: #333;
+		label {
+			font-size: 26px;
+			color: white;
+			padding: 0 20px 0 5px;
+			margin-bottom: 1px;
+			display: inline-block;
+			background-color: #6e6e6e;
+			background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+		}
+		.testimonials {
+			margin-top: 30px;
+			@media (min-width: 768px) {
+				margin-top:0;
+			}
+			h3 {
+				color: darken(#FF96CA, 10%);
+				margin-top: 0;
+			}
+			p {
+				margin-bottom: 20px;
+				color: #aaa;
+				font-size: 11px;
+				span {
+					font-style: italic;
+				}
+			}
+		}
+
+	}
+}
+
+.about-page {
+	padding-bottom: 20px;
+}
+
+.panel-quote {
+	float: left;
+	background-color: #e2e2e2;
+	padding: 20px;
+}
+
+
+.doterra {
+	.video {
+		position: relative;
+		padding-top: 52.5%;
+		@media (min-width: 768px) {
+		  	padding-top: 30%;
+		}
+
+		iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width:100%;
+			height: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	img {
+		width: 400px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+
+
+
+.private-corporate-banner, .about-banner, .doterra-banner, .classes-banner {
+	@media (min-width: 768px) {
+  		min-height: 370px;
+	}
+
+	@media (min-width: 992px) {
+  		min-height: 400px;
+	}
+
+	@media (min-width: 1200px) {
+  		min-height: 407px;	
+	}
+}
+

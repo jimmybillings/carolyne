@@ -1,0 +1,14 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/video/scripts/screenerApp/assets/fonts/fonts/fontawesome-webfont.eot');
+  src: url('/video/scripts/screenerApp/assets/fonts/fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+   url('/video/scripts/screenerApp/assets/fonts/fontawesome-webfont.woff') format('woff'),
+   url('/video/scripts/screenerApp/assets/fonts/fonts/fontawesome-webfont.ttf') format('truetype'),
+   url('/video/scripts/screenerApp/assets/fonts/fonts/fontawesome-webfont.svg') format('svg');
+  //src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}

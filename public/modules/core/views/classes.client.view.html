@@ -1,0 +1,123 @@
+<section class="content" data-ng-controller="ClassesController" ng-init="classes = true">
+	<div class="classes-banner">
+		<section class="container">
+			<h2>PRACTICE</h2>
+		</section>
+	</div>
+	<section class="container practice">
+		<div class="row">
+			<div class="col-sm-3">
+				<ul class="list-group">
+				  <li class="list-group-item" ng-class="{'active': classes}"  ng-click="classes = true">Classes</li>
+				  <li class="list-group-item" ng-class="{'active': !classes}" ng-click="classes = false">Resources</li>
+				</ul>
+			</div>
+			<div class="col-sm-9">
+				<div ng-show="classes">
+					
+					<div class="row classes">
+						<div class="col-sm-12">
+							<h4>“Yoga is the ability to quiet the disturbances of the mind and in that calmness clear perception is attained” T.K.V Desikachar</h4>
+						</div>
+						<div class="col-sm-12">
+							<h5>Tuesday</h5>
+							<div class="panel">
+								<p>Prana Flow Inspired<br /> 
+									6:00-7:00pm<br /> 
+									Endorphin Park Hill</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h5>Thursday</h5>
+							<div class="panel">
+								<p>Prana Flow Inspired<br /> 
+									9:30-10:45am<br /> 
+									Endorphin City Park</p>
+							</div>
+							<div class="panel">
+								<p>Prana Flow Inspired<br /> 
+									6:00-7:00pm<br /> 
+									Endorphin Park Hill</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h5>Saturday</h5>
+							<div class="panel">
+								<p>Primal Flow<br /> 
+									11:15-12:15pm<br /> 
+									Pura Vida Fitness and Spa</p>
+							</div>
+						</div>
+						<div class="col-sm-6 maps">
+							<div class="panel"  id="endorphin">
+							</div>
+						
+						</div>
+						<div class="col-sm-6 maps">
+							<div class="panel"  id="puravida">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div ng-show="!classes">
+					<h3>BOOKS I LIKE</h3>
+					<ul>
+						<li>The Yoga Sutras of Patanjali by Swami Satchidananda</li>
+						<li>The Bhagavad Gita by Eknath Easwaran</li>
+						<li>The Upanishads by Eknath Easwaran</li>
+						<li>The Ecstasy of Surrender by Dr. Judith Orloff</li>
+						<li>The Heart of Yoga: Developing a Personal Practice by T. K. V. Desikachar</li>
+						<li>Tending the Heart Fire: Living in Flow with the pulse of Life by Shiva Rea</li>
+						<li>Yoga: The Spirit and Practice of Moving into Stillness by Erich Schiffman</li>
+						<li>Journey Into Power by Baron Baptiste</li>
+						<li>Striking Thoughts: Bruce Lee's Wisdom for Daily Living  by Bruce Lee and John Little</li>
+						<li>Jivamukti Yoga: Practices for Liberating Body and Soul By Sharon Gannon and David Life</li>
+					</ul>
+					<h3>PEOPLE WHO ROCK</h3>
+					<ul>
+						<li>Seane Corn <a href="http://www.seanecorn.com">www.seanecorn.com</a></li>
+						<li>Shiva Rea <a href="http://www.shivarea.com">www.shivarea.com</a></li>
+						<li>Baron Baptiste <a href="http://www.baronbaptiste.com">www.baronbaptiste.com</a></li>
+						<li>Janet Stone <a href="http://www.janetstoneyoga.com">www.janetstoneyoga.com</a></li>
+						<li>Erich Schiffman <a href="http://www.erichschiffmann.com">www.erichschiffmann.com</a></li>
+						<li>Christina Sell <a href="http://www.livethelightofyoga.com">www.livethelightofyoga.com</a></li>
+						<li>T.K.V. Desikachar <a href="http://www.kym.org">www.kym.org</a></li>
+						<li>Claire Missingham <a href="http://www.claireyoga.com">www.claireyoga.com</a></li>
+						<li>Kathryn Budig <a href="http://www.kathrynbudig.com">www.kathrynbudig.com</a></li>
+					</ul>
+					<h3>PLACES TO GO</h3>
+					<p>Local to Denver, CO</p>
+					<ul>
+						<li>Endorphin <a href="http://www.myendorphin.com">www.myendorphin.com</a></li>
+						<li>Pura Vida <a href="http://www.puravidaclub.com">www.puravidaclub.com</a></li>
+						<li>Kindness Yoga <a href="http://www.kindnesscollective.com">www.kindnesscollective.com</a></li>
+						<li>Yoga Pod Lodo <a href="http://www.lodo.yogapodcommunity.com">www.lodo.yogapodcommunity.com</a></li>
+						<li>The River <a href="http://www.weseektheriver.com">www.weseektheriver.com</a></li>
+					</ul>
+					<p>Vail, CO</p>
+					<ul>
+						<li>Revolution Yoga <a href="http://www.revolutionpoweryoga.com">www.revolutionpoweryoga.com</a></li>
+					</ul>
+					<p>California</p>
+					<ul>
+						<li>The Yoga Tree <a href="http://www.yogatreesf.com">www.yogatreesf.com</a></li>
+						<li>Exhale Spa <a href="http://www.exhalespa.com">www.exhalespa.com</a></li>
+					</ul>
+					<p>South Carolina</p>
+					<ul>
+						<li>Charleston Power Yoga <a href="http://www.charlestonpoweryoga.com">www.charlestonpoweryoga.com</a></li>
+						<li>Holy Cow Yoga <a href="http://www.holycowyoga.com">www.holycowyoga.com</a></li>
+						<li>Jivamukti Yoga Charleston <a href="http://www.jivamuktiyogasc.com">www.jivamuktiyogasc.com</a></li>
+					</ul>
+					<p>London, UK</p>
+					<ul>
+						<li>Triyoga <a href="http://www.triyoga.co.uk">www.triyoga.co.uk</a></li>
+					</ul>
+
+
+
+				</div>
+			</div>
+	</section>
+</section>
