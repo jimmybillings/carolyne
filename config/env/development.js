@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-
 	db: 'mongodb://jimmybillings:Madison.21@ds043210.mongolab.com:43210/carolyne_yoga',
 	app: {
 		title: 'Carolyne Billings Yoga - Development Environment'

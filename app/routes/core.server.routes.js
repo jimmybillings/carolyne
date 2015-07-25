@@ -18,4 +18,5 @@ module.exports = function(app) {
 	app.route('/contact/form').get(routes.contact.form);
 	app.route('/corporate-private').get(routes.corporate.index);
 	app.route('/email').post(routes.core.email);
+	app.route('/contact').post(routes.contact.create);
 };

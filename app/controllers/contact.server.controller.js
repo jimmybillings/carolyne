@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 var mongoose = require('mongoose'),
+	Contact = mongoose.model('Contact'),
     _ = require('lodash');
 
 exports.index = function(req, res) {
@@ -26,6 +27,12 @@ exports.form = function(req, res) {
  */
 exports.create = function(req, res) {
 
+	var contact = new Contact(req.body);
+    contact.save(function() {
+    	res.jsonp({ success: 'Thanks for signing up!'});
+    }, function(error){
+    	res.status(400).json(error.errors);
+    });	
 };
 
 /**

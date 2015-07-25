@@ -1,13 +1,14 @@
 
-angular.module('core').controller('FooterController', ['$scope',
-  function($scope) {
+angular.module('core').controller('FooterController', ['$scope', '$resource',
+  function($scope, $resource) {
     
-    // $scope.signUp = function() {
-    //   Restangular.setBaseUrl("/api");
-    //   Restangular.service('signup.json').post({'email':$scope.email}).then(function(response){
-    //     $scope.signedUp = response.success;
-    //   });
-    // };
+    $scope.signUp = function() {
+      $resource('email').save({'email':$scope.email}).$promise
+        .then(function(response){
+          console.log(response);
+          $scope.signedUp = response.success;
+        });
+    };
 
     window.feed = new window.Instafeed({
        user_id: '205077230',

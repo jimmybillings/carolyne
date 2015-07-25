@@ -19,7 +19,7 @@ exports.email = function(req, res) {
 		{$setOnInsert: req.body}, 
 		{upsert: true}, 
 		function(err, numAffected) {
-			res.jsonp(req.body);
+			res.jsonp({ success: 'Thanks for signing up!'});
 		}
 	);
 
